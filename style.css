@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.backgroudd {
+  width: 100vw;
+  height: 115vh;
+  background: url(./image.png);
+  background-repeat: no-repeat;
+}
+
+.mario {
+  top: 600px;
+  position: relative;
+  animation-name: marioAnimation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes marioAnimation {
+  0% {
+    top: 600px;
+    left: -500px;
+  }
+  50% {
+    left: 1700px;
+    top: 600px;
+  }
+  100% {
+    top: 600px;
+    left: -500px;
+  }
+}
+
+.luigi {
+  top: 570px;
+  position: relative;
+  animation-name: luigiAnimation;
+  animation-duration: 4.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes luigiAnimation {
+  0% {
+    top: 570px;
+    left: -500px;
+  }
+
+  50% {
+    left: 1700px;
+    top: 570px;
+  }
+  100% {
+    top: 570px;
+    left: -500px;
+  }
+}
